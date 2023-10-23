@@ -1,0 +1,17 @@
+.header{
+    display: flex;
+    justify-content: space-around;
+
+    &_logo{
+        max-width: 310px;
+        max-height: 110px;
+    }
+    &_list{
+        text-decoration: none;
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        
+    }
+}

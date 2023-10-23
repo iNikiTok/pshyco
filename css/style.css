@@ -312,4 +312,35 @@ template {
   padding-right: calc(50vw - 555px);
 }
 
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+}
+.header_logo {
+  max-width: 310px;
+  max-height: 110px;
+}
+.header_list {
+  text-decoration: none;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.nav_link {
+  text-decoration: none;
+  padding: 0px 10px;
+  color: #85AAAB;
+}
+.nav_link:hover {
+  color: #6DE1E3;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
 /*# sourceMappingURL=style.css.map */
