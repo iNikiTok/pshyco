@@ -1,0 +1,12 @@
+.nav{
+    &_link{
+        text-decoration: none;
+        padding: 0px 10px;
+        color: #85AAAB;
+    }
+    &_link:hover{
+        color: #6DE1E3;
+        text-decoration: underline;
+        font-weight: 700;
+    }
+}
