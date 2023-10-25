@@ -5,6 +5,8 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap");
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -308,23 +310,23 @@ template {
 }
 
 .center {
-  padding-left: calc(50vw - 555px);
-  padding-right: calc(50vw - 555px);
+  padding-left: calc(50vw - 563px);
+  padding-right: calc(50vw - 563px);
 }
 
 body {
   font-family: "Montserrat", sans-serif;
 }
 
-.header {
+.header_up {
   display: flex;
   justify-content: space-around;
 }
-.header_logo {
+.header_up_logo {
   max-width: 310px;
   max-height: 110px;
 }
-.header_list {
+.header_up_list {
   text-decoration: none;
   list-style-type: none;
   display: flex;
@@ -341,6 +343,97 @@ body {
   color: #6DE1E3;
   text-decoration: underline;
   font-weight: 700;
+}
+
+.border {
+  border-radius: 10px;
+  border: 1px solid #000;
+}
+
+.form_container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto auto auto auto;
+  grid-gap: 10px;
+  grid-template-areas: "header header" "small-form1 big-form" "small-form2 big-form" "small-form3 big-form" "content content" "confirm-button confirm-button";
+}
+
+.header {
+  grid-area: header;
+  text-align: center;
+  padding: 10px;
+  font-weight: 700;
+  font-size: 48px;
+  font-family: "Oswald", sans-serif;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: "small-form1 big-form" "small-form2 big-form" "small-form3 big-form" "content content" "confirm-button confirm-button";
+}
+
+.small-form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.form-label {
+  text-align: center;
+  padding: 10px;
+}
+
+.input_width {
+  width: 100%;
+  padding: 5px;
+  margin: 5px 0;
+}
+.input_checkbox {
+  padding-right: 10px;
+}
+
+.big-form {
+  grid-area: big-form;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.form-label {
+  text-align: center;
+  padding: 20px;
+}
+
+.content {
+  grid-area: content;
+  padding: 10px;
+  color: #2D5E5E;
+  display: flex;
+  justify-content: center;
+}
+
+.confirm-button {
+  grid-area: confirm-button;
+  text-align: center;
+  padding: 10px;
+}
+.confirm-button_submit {
+  background-color: #2D5E5E;
+  color: white;
+  cursor: pointer;
+  padding: 8px 74px;
+  border: none;
+}
+.confirm-button_submit:hover {
+  color: rgb(228, 228, 228);
+  background-color: #254e4e;
+}
+
+#big-input {
+  resize: none;
+  height: 100%;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
