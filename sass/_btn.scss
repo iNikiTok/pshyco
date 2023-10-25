@@ -4,4 +4,19 @@
     background-color: #2D5E5E;
     border-radius: 10px;
     padding: 8px 42px;
+    display: inline-flex;
+    white-space: nowarp;
+    justify-content: center;
+    gap: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-style: 18px;
+    line-height: 1.33;
+    &hover,
+    &focus{
+        opacity: .7;
+    }
+    &:active{
+        opacity: .4;
+    }
 }

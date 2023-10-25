@@ -8,11 +8,11 @@
 </head>
 <body>
 
-    <header class="center header">
-        <div class="header_logo">
+    <header class="center header_up">
+        <div class="header_up_logo">
             <a href="#"><img src="./img/logo.png" alt="logo"></a>
         </div>
-        <ul class="header_list">
+        <ul class="header_up_list">
             <li><a href="#" class="nav_link">Главная</a></li>
             <li><a href="#" class="nav_link">Мероприятия</a></li>
             <li><a href="#" class="nav_link">Контакты</a></li>
@@ -26,7 +26,39 @@
 
     </div>
     <div class="about center">
-
+    </div>
+    <!-- Пока что только форма -->
+    <div class="center form_container">
+        <div class="header">Записаться на прием</div>
+        <form class="form">
+        <div class="small-form small-form1">
+            <input type="text" id="input1" placeholder="Ваше имя *" class="border input_width" required>
+        </div>
+        <div class="big-form">
+            <textarea id="big-input" placeholder="Пожелания" class="border"></textarea>
+        </div>
+        <div class="small-form small-form2 ">
+            <input type="number" id="input2" placeholder="Ваш телефон *" class="border input_width" required>
+        </div>
+        <div class="small-form small-form3">
+            <select name="themeOfMeet" id="themeOfMeet" class="border input_width input_checkbox">
+                <option value="select" selected disabled>Тема встречи *</option>
+                <option value="reception1">Прием 1</option>
+                <option value="reception2">Прием 2</option>
+                <option value="reception3">Прием 3</option>
+                <option value="reception4">Прием 4</option>
+                <option value="reception5">Прием 5</option>
+                <option value="reception6">Прием 6</option>
+            </select>
+        </div>
+        <div class="content">
+        <input type="checkbox" name="politics" id="politics" checked required>
+        <label for="politics">Я согласен с политикой конфиденциальности</label>
+        </div>
+        <div class="confirm-button">
+            <button type="submit" class="border confirm-button_submit">Отправить</button>
+        </div>
+        </form>
     </div>
 </body>
 </html>
