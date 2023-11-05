@@ -1,0 +1,26 @@
+.offer{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    background-image: url(../img/mainPhoto.webp) ;
+    background-repeat: no-repeat;
+    background-color: #b1b1b1;
+    background-position-x: center;
+    padding: 0;
+    min-height: 768px;
+    &_text{
+        display: flex;
+        flex-direction: column;
+        max-width: 454px;
+        gap: 55px;
+        color:  #fff;
+    }
+    &_titel{
+        font-size: 48px;
+        font-weight: 700;
+    }
+    &_content{
+        font-size: 24px;
+    }
+}
