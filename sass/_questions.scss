@@ -1,0 +1,8 @@
+.questions {
+  max-width: 81%;
+  & > h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 48px;
+  }
+}

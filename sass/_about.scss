@@ -1,0 +1,15 @@
+.about{
+    display: flex;
+    background: url(../img/Rectangle.jpg), lightgray 50% / cover no-repeat;
+    justify-content: space-around;
+    padding: 60px 0;
+    &_text{
+        max-width: 625px;
+        color: #fff;
+        gap: 10px;
+        font-weight: 700;
+        &>h3{
+            font-size: 36px;
+        }
+    }
+}

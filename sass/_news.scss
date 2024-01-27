@@ -1,0 +1,17 @@
+.news {
+  color: white;
+  background: url(../img/bg_news.jpg), lightgray 50% / cover no-repeat;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  padding: 0 135px;
+  gap: 50px;
+  &_title {
+    grid-column: span 3;
+    font-size: 48px;
+  }
+  &_blocks {
+    grid-column: span 1;
+    font-size: 24px;
+  }
+}

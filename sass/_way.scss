@@ -1,0 +1,35 @@
+.way {
+  background: url(../img/map.jpg), lightgray 50% / cover no-repeat;
+  max-height: 600px;
+  height: 600px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 60px 0 0;
+  &_block {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 30px;
+    gap: 15px;
+    width: 477px;
+    height: 344px;
+    background-color: #adddde;
+    & > h3 {
+      color: #2d5e5e;
+      font-size: 48px;
+      margin: 0;
+    }
+    & > ul {
+      margin: 0;
+      padding: 0;
+      & > li {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        padding: 5px 0;
+      }
+    }
+  }
+}
