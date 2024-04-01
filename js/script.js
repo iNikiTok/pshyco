@@ -25,33 +25,19 @@ document.addEventListener("DOMContentLoaded", () => {
 }); // фух, ели успел(тут могла быть ваша утка)
 
 // анимация счета
-const counterElement = document.querySelector("#countedNumber");
-let isAnimated = false;
+const counters = document.querySelectorAll(".counter");
 
-document.addEventListener("scroll", () => {
-  if (
-    counterElement.getBoundingClientRect().top < window.innerHeight * 0.75 &&
-    !isAnimated
-  ) {
-    isAnimated = true;
-    startCount();
-  }
-});
+counters.forEach((counter) => {
+  const target = counter.dataset.target;
+  let current = 0;
 
-function startCount() {
-  let currentValue = 0;
-  let max = +counterNumber.getAttribute("data-value");
-
-  let pace = 100;
-
-  let interval = setInterval(() => {
-    if (pace >= max * 0.75) {
-      pace = 10;
-    }
-    if (currentValue >= max) {
+  const interval = setInterval(() => {
+    if (current < target) {
+      current++;
+      counter.textContent = current;
+    } else {
       clearInterval(interval);
+      counter.classList.add("active");
     }
-    counterNumber.innerText = currentValue;
-    currentValue++;
-  }, pace);
-}
+  }, 10);
+});
