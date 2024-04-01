@@ -71,68 +71,68 @@
       <img src="./img/aboutPhoto.webp" alt="about" />
     </div>
     <!-- Пока что только форма -->
-    <div class="center form_container">
+
+    <form class="form center">
       <div class="header">Записаться на прием</div>
-      <form class="form">
-        <div class="small-form small-form1">
-          <input
-            type="text"
-            id="input1"
-            placeholder="Ваше имя *"
-            class="border input_width"
-            required
-          />
-        </div>
-        <div class="big-form">
-          <textarea
-            id="big-input"
-            placeholder="Пожелания"
-            class="border"
-          ></textarea>
-        </div>
-        <div class="small-form small-form2">
-          <input
-            type="number"
-            id="input2"
-            placeholder="Ваш телефон *"
-            class="border input_width"
-            required
-          />
-        </div>
-        <div class="small-form small-form3">
-          <select
-            name="themeOfMeet"
-            id="themeOfMeet"
-            class="border input_width input_checkbox"
-          >
-            <option value="select" selected disabled>Тема встречи *</option>
-            <option value="reception1">Прием 1</option>
-            <option value="reception2">Прием 2</option>
-            <option value="reception3">Прием 3</option>
-            <option value="reception4">Прием 4</option>
-            <option value="reception5">Прием 5</option>
-            <option value="reception6">Прием 6</option>
-          </select>
-        </div>
-        <div class="content">
-          <input
-            type="checkbox"
-            name="politics"
-            id="politics"
-            checked
-            required
-          />
-          <label for="politics"
-            >Я согласен с политикой конфиденциальности</label
-          >
-        </div>
-        <div class="confirm-button">
-          <button type="submit" class="border confirm-button_submit">
-            Отправить
-          </button>
-        </div>
-      </form>
-    </div>
+      <div class="small-form small-form1">
+        <input
+          type="text"
+          id="input1"
+          placeholder="Ваше имя *"
+          class="input_style input_width"
+          required
+        />
+      </div>
+      <div class="big-form">
+        <textarea
+          id="big-input"
+          placeholder="Пожелания"
+          class="input_style"
+        ></textarea>
+      </div>
+      <div class="small-form small-form2">
+        <input
+          type="tel"
+          id="input2"
+          placeholder="Ваш телефон *"
+          pattern="[0-9\s+]*"
+          class="input_style input_width"
+          required
+        />
+      </div>
+      <div class="small-form small-form3">
+        <select
+          name="themeOfMeet"
+          id="themeOfMeet"
+          class="input_style input_width input_checkbox"
+        >
+          <option value="select" selected disabled>Тема встречи *</option>
+          <option value="reception1">Прием 1</option>
+          <option value="reception2">Прием 2</option>
+          <option value="reception3">Прием 3</option>
+          <option value="reception4">Прием 4</option>
+          <option value="reception5">Прием 5</option>
+          <option value="reception6">Прием 6</option>
+        </select>
+      </div>
+      <div class="content">
+        <input
+          type="checkbox"
+          name="politics"
+          id="politics"
+          class="custom-checkbox"
+          checked
+          required
+        />
+        <label for="politics">Я согласен с политикой конфиденциальности</label>
+      </div>
+      <div class="confirm-button">
+        <button type="submit" class="input_style confirm-button_submit">
+          Отправить
+        </button>
+      </div>
+    </form>
+
     <div class="price">
       <div class="price_blocks">
         <h3 class="price_titel">120 мин</h3>
@@ -179,7 +179,7 @@
               alt="sokrat"
               class="user_icon"
             />
-            Сократ, 69 лет
+            Сократ, 70 лет
           </h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
@@ -271,21 +271,62 @@
         </ul>
       </div>
     </div>
-    <div>
-      <h3>Записаться со скидкой 50 грн</h3>
-      <form action="">
-        <input type="text" placeholder="Ваше имя *" required />
-        <input
-          type="text"
-          name="number"
-          id="number"
-          placeholder="Ваш телефон *"
-          required
-          inputmode="numeric"
-        />
-        <input type="checkbox" name="politics2" id="politics2" required />
-        <label for="politics2">Я согласен с политикой конфиденциальности</label>
+    <div class="form2">
+      <h3 class="form2_header">
+        Записаться со скидкой
+        <span id="countedNumber" data-value="50">0</span> грн
+      </h3>
+      <form action="" class="form2_form">
+        <div class="form2_top">
+          <input
+            type="text"
+            placeholder="Ваше имя *"
+            required
+            class="input_style input_style_form2"
+          />
+          <input
+            type="text"
+            name="tel"
+            id="number"
+            pattern="[0-9\s+]*"
+            placeholder="Ваш телефон *"
+            required
+            inputmode="numeric"
+            class="input_style input_style_form2"
+          />
+
+          <div class="confirm-button confirm-button-form2">
+            <button type="submit" class="input_style confirm-button_submit">
+              Записаться со скидкой
+            </button>
+          </div>
+        </div>
+        <div class="content">
+          <input
+            type="checkbox"
+            name="politics2"
+            id="politics2"
+            required
+            class="input_style"
+          />
+          <label for="politics2"
+            >Я согласен с политикой конфиденциальности</label
+          >
+        </div>
       </form>
+    </div>
+    <div class="bottom">
+      <ul class="bottom_container">
+        <li>
+          <div class="header_up_logo">
+            <a href="#"><img src="./img/logo.png" alt="logo" /></a>
+          </div>
+        </li>
+        <li><a href="#" class="bottom_links">@phyholog_sergei</a></li>
+        <li><a href="#" class="bottom_links">+380 99 123 45 67</a></li>
+        <li><a href="#" class="bottom_links">@phyholog_sergei</a></li>
+        <li><a href="#" class="bottom_links">+380 99 123 45 67</a></li>
+      </ul>
     </div>
     <script src="./js/script.js"></script>
   </body>
